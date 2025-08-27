@@ -1,0 +1,18 @@
+version: 2.10
+targets:
+  operator_label:
+    type: text
+    synonyms: ["Operator", "Operator:", "Select Operator"]
+  currency_label:
+    type: text
+    synonyms: ["Currency", "Currency:", "Select Currency"]
+  select_a_game_header:
+    type: text
+    synonyms: ["Select a Game", "Select a Game:"]
+  # guards (used only to keep dropdown ROI above these)
+  create_campaign_header:
+    type: text
+    synonyms: ["Create Free Game Campaign"]
+  cancel_campaign_header:
+    type: text
+    synonyms: ["Cancel Free Game Campaign"]

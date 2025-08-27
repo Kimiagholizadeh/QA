@@ -1,0 +1,8 @@
+product: edgelabs_gen2
+platform: web
+adapter: web_selenium
+entry: "https://qa.edgelabs.game/FE/lobby/gen2/"
+targets: "./targets.yaml"
+registry: "./registry.yaml"
+models:
+  yolo_tiles: "../models/tiles_yolov12.pt"

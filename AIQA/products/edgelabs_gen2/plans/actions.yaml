@@ -1,0 +1,20 @@
+version: 1
+schema: actions
+
+defaults:
+  operator_id: WowVegas
+  currency_code: SC
+
+canonical_menu_actions:
+  operator_and_currency:
+    - name: select_one_operator
+      params: {operator_id: {type: string, enum: [WowVegas, DotCom]}}
+      effects: [menu.operator_selected]
+
+    - name: select_currency
+      params: {currency_code: {type: string}}
+      effects: [menu.currency_selected]
+      constraints:
+        allowed_values_by_operator:
+          WowVegas: [SC, WOW]
+          DotCom: [USD, GBP, EUR]
